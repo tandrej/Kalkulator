@@ -32,7 +32,7 @@ int main() {
 
         // operator doesn't match any case constant (+, -, *, /)
         default:
-            printf("Error! operator is not correct");
+            printf("Error! Operacija nije moguća");
     }
 
     return 0;
