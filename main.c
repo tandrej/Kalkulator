@@ -4,35 +4,35 @@
 int main() {
 
     char operator;
-    double firstNumber,secondNumber;
+    double prviBroj,drugiBroj;
 
     printf("Enter an operator (+, -, *,): ");
     scanf("%c", &operator);
 
     printf("Enter two operands: ");
-    scanf("%lf %lf",&firstNumber, &secondNumber);
+    scanf("%lf %lf",&prviBroj, &drugiBroj);
 
     switch(operator)
     {
         case '+':
-            printf("%.1lf + %.1lf = %.1lf",firstNumber, secondNumber, firstNumber + secondNumber);
+            printf("%.1lf + %.1lf = %.1lf",prviBroj, drugiBroj, prviBroj + drugiBroj);
             break;
 
         case '-':
-            printf("%.1lf - %.1lf = %.1lf",firstNumber, secondNumber, firstNumber - secondNumber);
+            printf("%.1lf - %.1lf = %.1lf",prviBroj, drugiBroj, prviBroj - drugiBroj);
             break;
 
         case '*':
-            printf("%.1lf * %.1lf = %.1lf",firstNumber, secondNumber, firstNumber * secondNumber);
+            printf("%.1lf * %.1lf = %.1lf",prviBroj, drugiBroj, prviBroj * drugiBroj);
             break;
 
         case '/':
-            printf("%.1lf / %.1lf = %.1lf",firstNumber, secondNumber, firstNumber / firstNumber);
+            printf("%.1lf / %.1lf = %.1lf",prviBroj, drugiBroj, prviBroj / prviBroj);
             break;
 
         // operator doesn't match any case constant (+, -, *, /)
         default:
-            printf("Error! operator is not correct");
+            printf("Error! Operacija nije moguća");
     }
 
     return 0;
